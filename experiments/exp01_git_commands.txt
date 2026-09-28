@@ -1,0 +1,16 @@
+mkdir mlops-house-price
+cd mlops-house-price
+git init
+echo "# House Price ML Project" > README.md
+git add README.md
+git commit -m "Initial ML project"
+git branch model-update
+git switch model-update
+echo "Model version 2" > model.txt
+git add model.txt
+git commit -m "Add model version 2"
+git switch main
+git merge model-update
+git log --oneline --decorate --graph --all
+git revert HEAD --no-edit
+git log --oneline -3

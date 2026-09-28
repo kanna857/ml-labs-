@@ -1,0 +1,8 @@
+mkdir -p ml_project/{data,preprocessing,training,evaluation,models,deployment}
+touch ml_project/data/README.md
+touch ml_project/preprocessing/preprocess.py
+touch ml_project/training/train.py
+touch ml_project/evaluation/evaluate.py
+touch ml_project/deployment/app.py
+touch ml_project/models/.gitkeep
+tree ml_project
